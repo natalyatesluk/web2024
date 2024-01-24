@@ -1,0 +1,75 @@
+#div_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ol{
+    list-style-type: none;
+    text-align:left;
+    display: inline-block;
+    width: 400px;
+    background-color: rgb(174, 214, 174);
+    padding: 30px ;
+}
+ol li{
+    background-color:darkseagreen;
+    margin-bottom: 5px;
+    padding: 5px ;
+    color: white;
+    
+}
+span.number{
+    background-color:darkseagreen;
+    margin-bottom: 5px;
+    padding: 5px ;
+    color: white;
+}
+span.text_item{
+    background-color:rgb(109, 138, 109);
+    margin-bottom: 5px;
+    padding: 5px ;
+    color: white;
+}
+#div_list_w{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+li.season::marker{
+    content:url(./images/arrow-right_16.png);
+}
+li.season{
+    padding: 10px;
+}
+li.winter::marker{
+    content: url(./images/snowflake_16.png);
+}
+li.winter{
+    padding-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 1.5px;
+}
+li.spring{
+    padding-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 1.5px;
+}
+li.spring::marker{
+    content: url(./images/leaf_g_16.png);
+}
+li.summer{
+    padding-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 1.5px;
+}
+li.summer::marker{
+    content: url(./images/sun_16.png);
+}
+li.autumn{
+    padding-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 1.5px;
+}
+li.autumn::marker{
+    content: url(./images/leaf_y_16.png);
+}
