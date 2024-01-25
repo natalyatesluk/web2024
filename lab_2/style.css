@@ -73,3 +73,42 @@ li.autumn{
 li.autumn::marker{
     content: url(./images/leaf_y_16.png);
 }
+body.dailyList {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    width: 400px;
+}
+
+.todo-item {
+    background-color: #e1e6e6;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+.todo-item.lightblue {
+    background-color: #c0e0ee;
+}
+.todo-item.darkblue {
+    background-color: #a5c1cd;
+}
+
+.todo-item span {
+    margin-right: 10px;
+}
+
+.checkbox {
+    font-size: 20px;
+}
+
+.delete-cross {
+    color: red;
+}
