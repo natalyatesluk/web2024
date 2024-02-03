@@ -1,0 +1,101 @@
+
+div{
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 30px;
+
+} 
+ .table_emails {
+    font-family: sans-serif;
+    width: 100%;
+    padding: 10px; 
+    border-collapse: collapse;
+    
+ }
+
+ .table_emails th{
+    padding: 1rem;
+    background-color: rgb(72, 141, 72);
+    color: white;
+}
+.table_emails td{
+    margin:5px;
+    padding: 10px;
+    text-align: center;
+
+}
+#borderRadR{
+    border-top-left-radius: 30px;
+}
+#borderRadL{
+    border-top-right-radius: 30px;
+}
+.size{
+    text-align: center;
+    padding: 7px;
+    border-radius: 50px;
+    background-color: rgba(72, 141, 72, 0.845);
+    color: white;
+}
+.one{
+    display: inline-block;
+    width: 15px;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 90px;
+    color:white;
+}
+.two{
+    display: inline-block;
+    width: 15px;
+    padding: 10px;
+    background-color: rgb(165, 122, 42);
+    border-radius: 90px;
+    color:white;
+}
+.tree{
+    display: inline-block;
+    width: 15px;
+    padding: 10px;
+    background-color: rgb(61, 159, 65);
+    border-radius: 90px;
+    color:white;
+}
+.four{
+    display: inline-block;
+    width: 15px;
+    padding: 10px;
+    background-color: rgb(102, 208, 235);
+    border-radius: 90px;
+    color:white;
+}
+.five{
+    display: inline-block;
+    width: 15px;
+    padding: 10px;
+    background-color: rgb(55, 92, 179);
+    border-radius: 90px;
+    color:white;
+}
+.p2{
+    text-align: left;
+    color: darkgrey;
+}
+
+.leftText
+{
+    text-align: left;
+}
+.table_emails tr:nth-child(even)
+{
+    background-color: rgba(132, 248, 132, 0.382);
+}
+tr:hover{
+    background-color: rgba(210, 246, 208, 0.558);
+}
+.table_emails tr:nth-child(even):hover
+{
+    background-color: rgba(193, 248, 193, 0.382);
+}
