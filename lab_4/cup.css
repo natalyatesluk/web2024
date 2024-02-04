@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body{
+    background-color:  rgb(31, 31, 34);
+}
+.main{
+    margin:0 auto;
+    background-color: rgb(31, 31, 34);
+    border: 1px solid white;
+    color: white;
+    width: 210px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.photo img{
+    width: 130px;
+    border: 1px solid rgba(255, 255, 255, 0.5);;
+    border-radius: 30px;
+    margin: 0;
+    
+}
+.photo img:hover{
+    width: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.5);;
+    border-radius: 30px;
+    margin: 0;
+}
+.text h2{
+    font-family: "Gowun Dodum",  sans-serif;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+.text p{
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 11px;
+    margin: 7px;
+    text-align: center;
+}
+.edit{
+    font-family: "Gowun Dodum", sans-serif;
+    background-color:  rgb(31, 31, 34);
+    color:cornflowerblue ;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    margin:10px;
+    box-shadow: 0 0 10px rgba(100, 148, 237, 0.548);
+    height: 30px;
+    width: 70px;
+}
+.delete{
+    font-family: "Gowun Dodum", sans-serif;
+    background-color:  rgb(31, 31, 34);
+    color:crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    margin:10px;
+    box-shadow: 0 0 10px rgba(220, 20, 60, 0.507);
+    height: 30px;
+    width: 70px;
+}
+.edit:hover{
+    transform: scale(1.1);
+}
+.delete:hover{
+    transform: scale(1.1);
+}
+.edit:active{
+    transform: scale(1.0);
+    
+}
+.delete:active{
+    transform: scale(1.0);
+}
