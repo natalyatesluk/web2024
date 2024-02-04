@@ -3,12 +3,12 @@ body{
     background-color:  rgb(31, 31, 34);
 }
 .main{
-    margin:0 auto;
+    margin: 0 auto;
     background-color: rgb(31, 31, 34);
     border: 1px solid white;
     color: white;
-    width: 210px;
-    height: 300px;
+    width: 240px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -18,21 +18,21 @@ body{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .photo img{
-    width: 130px;
+    width: 150px;
     border: 1px solid rgba(255, 255, 255, 0.5);;
-    border-radius: 30px;
+    border-radius: 20px;
     margin: 0;
     
 }
 .photo img:hover{
-    width: 150px;
+    width: 170px;
     border: 1px solid rgba(255, 255, 255, 0.5);;
-    border-radius: 30px;
+    border-radius: 5px;
     margin: 0;
 }
 .text h2{
     font-family: "Gowun Dodum",  sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     margin: 0;
     text-align: center;
 }
