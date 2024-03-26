@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateX(55deg);
+
+        }
+        .loader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left:  40px solid #3498db;
+    border-top: 25px solid transparent;
+    border-bottom:  25px solid transparent;
+    transform:   translate(-200%, -16%) rotateZ(-30deg);
+}
+        .loader {
+            border: 10px solid #3498db;
+            border-radius: 50%;
+            border-top: 5px dotted  #3498db;
+            border-right: 9px dotted #3498db;
+            width: 200px;
+            height: 200px;
+            animation: spin 5s linear infinite;
+        }
+
+      @keyframes spin {
+            0% { transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader">
+        </div>
+    </div>
+</body>
+</html>
