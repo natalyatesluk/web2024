@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    
+    font-family: "Exo 2", sans-serif;
+}
+
+.menu {
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+
+.menu nav {
+    width: 100%;
+    background-color: black;
+    color: azure;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.main {
+    width: 75%;
+    height: 100%;
+    float: right;
+    margin: 8px;
+}
+
+.main header {
+    height: 50px;
+    background-color: black;
+    color: azure;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 5px 0 20px white;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.main main, .main aside {
+    font-size: 20px;
+    height: 250px;
+    background-color: black;
+    color: azure;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    clear: both;
+}
+
+.main footer {
+    text-align: right;
+    font-size: 20px;
+    background-color: black;
+    color: azure;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    clear: both;
+}
