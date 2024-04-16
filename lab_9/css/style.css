@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: grid;
+   grid-template-columns: 0.6fr 0.3fr 2.5fr 0.7fr 0.3fr; 
+   grid-template-rows: auto;
+    align-items: center; 
+    gap: 3px;
+    font-size: 15px;
+    height: 100%;
+  
+}
+
+.message{
+    grid-column: 3;
+}
+.userName p{
+    text-align: center; 
+}
+.pink{
+    background-color: rgb(248, 177, 201);
+    padding: 2%;
+   text-align: left;
+    
+}
+.blue{
+    background-color: rgb(182, 203, 246);
+    padding: 2%;
+    text-align: left;
+}
+.grey {
+    color: rgb(158, 158, 158);
+    font-size: 12px;
+    
+}
+@media screen and  (min-width: 769px) {
+    .container > div:nth-child(4)
+{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.container > div:nth-child(5)
+{
+    grid-column: 5;
+    grid-row: 2;
+}
+.container > div:nth-child(10)
+{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.container > div:nth-child(11)
+{
+    grid-column: 5;
+    grid-row: 4;
+}
+.container > div:nth-child(16)
+{
+    grid-column: 4;
+    grid-row: 6;
+}
+
+.container > div:nth-child(17)
+{
+    grid-column: 5;
+    grid-row: 6;
+}
+.pink{
+    border-radius: 15px 15px 15px 0px;
+}
+.blue{
+    border-radius: 15px 15px 0px 15px;
+}
+}
+
+
+@media screen and (max-width: 768px){
+    .container {
+        display: grid;
+       grid-template-columns: 0.7fr 0.3fr 2.5fr; 
+       grid-template-rows: auto;
+        align-items: center; 
+        gap: 3px;
+        font-size: 15px;
+      
+    }
+    .message{
+        grid-column: 3;
+    }
+    .userName{
+        grid-column: 1;
+    }
+    .avatar{
+        grid-column: 2;
+    }
+    .pink {
+        border-radius: 15px 15px 15px 0px;
+    }
+    .blue{
+        border-radius: 15px 15px 15px 0px;
+    }
+}
+@media screen and (max-width: 600px){
+    .container {
+        display: grid;
+       grid-template-columns: 0.3fr 2.5fr; 
+       grid-template-rows: auto;
+        align-items: center; 
+        gap: 3px;
+        font-size: 15px;
+      
+    }
+    .userName {
+        display: none;
+    }
+    .message{
+        grid-column: 2;
+    }
+    .avatar{
+        grid-column: 1;
+    }
+    .pink {
+        border-radius: 15px 15px 15px 0px;
+    }
+    .blue{
+        border-radius: 15px 15px 15px 0px;
+    }
+}
