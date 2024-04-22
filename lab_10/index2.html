@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sstlyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <h1>Motherboard</h1>
+        <p>Create new object</p>
+        <input type="text">
+        <button class="blue" >Search</button>
+        <button class="red">Cancel</button>
+    </div>
+
+    <div class="main">
+        <label for ="sort">Sort by </label>
+        <input type="range" id="sort">
+        <p><b>Count total</b></p>
+        <button class="blue but1">Count</button>
+        <button class="green but2">Preview</button>
+        <div><img src="./image/matherboard.jpg" alt="Mathboard"></div>
+     </div>
+
+     <div class="overlay"></div>
+
+     <div class="container">
+        <div class="head">
+            <h2>Motherboard Components</h2>
+            <button class="red close">x</button>
+        </div>
+        <form>
+
+            <div class="form-group">
+                <label for="manufacturer">Manufacturer/Model:</label>
+                <input type="text" name="manufacturer" id="manufacturer" placeholder="Manufacturer">
+            </div>
+
+            <div class="form-group">
+                <label for="chipset">Chipset:</label>
+                <select id="chipset" name="chipset" placeholder="Chipset">
+                    <option value="Intel H370">Intel H370</option>
+                    <option value="AMD B450">AMD B450</option>
+                    <option value="Intel Z390">Intel Z390</option>
+                    <option value="AMD X570">AMD X570</option>
+                    <option value="Intel B360">Intel B360</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cpuSocket">CPU Socket:</label>
+                <select id="cpuSocket" name="cpuSocket" placeholder="CPU">
+                    <option value="LGA1151">LGA1151</option>
+                    <option value="AM4">AM4</option>
+                    <option value="LGA1200">LGA1200</option>
+                    <option value="TR4">TR4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dimmSlots">DIMM Slots:</label>
+                <select id="dimmSlots" name="dimmSlots" placeholder="DIMM">
+                    <option value="DDR4">DDR4</option>
+                    <option value="DDR3">DDR3</option>
+                    <option value="DDR5">DDR5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dimensions">Form factor/Dimensions:</label>
+                <input type="text" name="dimensions" id="dimensions" placeholder="Form factor">
+            </div>
+            
+            <div class="new_img">
+                <label class="custom">
+                    <input type="file" id="fileInput" class="custom-file-upload" accept="image/jpeg, image/png">
+                </label>
+                
+                <div id="imageContainer"><img src="./image/photo.png" alt=""></div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="blue">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -64,16 +64,3 @@ body{
     height: 30px;
     width: 70px;
 }
-.edit:hover{
-    transform: scale(1.1);
-}
-.delete:hover{
-    transform: scale(1.1);
-}
-.edit:active{
-    transform: scale(1.0);
-    
-}
-.delete:active{
-    transform: scale(1.0);
-}

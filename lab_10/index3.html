@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <div class="info">
+            <div class="registration">
+                <h2>Registration form</h2>
+                <div>
+                    <label for="username"><img src="./image/username.png" alt=""></label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+    
+                <div>
+                <label for="email"><img src="./image/email.png" alt=""></label>
+                <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                
+                <div class="pas">
+                    <div>
+                        <label for="password"><img src="./image/pswd.png" alt=""></label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="confirm" placeholder="Confirm password">
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <h2>Personal details</h2>
+                <div>
+                    <input type="text" name="firstname" id="firstname" placeholder="First name">
+                    <input type="text" name="lastname" id="lastname" placeholder="First name">
+                </div>
+    <div>
+        <select name="sex" id="sex">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+    
+                <input type="text" name="date" id="date" placeholder="dd/mm/yy">
+    </div>
+            </div>
+        </div>
+        <div class="check">
+            <div class="form_group">
+                <label>
+                    <input type="checkbox" name="notification" class="real_check">
+                    <span class="custom_check"></span>
+                    I want to receive news and special offers
+                </label>
+            </div>
+            
+            <div class="form_group">
+                <label>
+                    <input type="checkbox" name="condition" class="real_check">
+                    <span class="custom_check"></span>
+                    I agree with the Terms and Conditions
+                </label>
+            </div>
+        </div>
+        <div class="but">
+            <button type="submit"> SUBMIT</button>
+        </div>
+    </form>
+</body>
+</html>

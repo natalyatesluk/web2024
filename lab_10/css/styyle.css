@@ -1,0 +1,336 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+form{
+    width: 800px;
+    height: 430px;
+    background-color: rgb(225, 222, 222);
+    box-shadow: 0 5px 20px black; 
+    
+}
+.info{
+    display: flex;
+   flex-direction:row ;
+   width: 100%;
+   height: 55%;
+}
+.registration{
+    display: flex;
+    flex-direction:column ;
+    height: 55%;
+    width: 50%;
+    padding: 5px 0 0 20px;
+}
+.registration div{
+    display: flex;
+    flex-direction:row ;
+    width: 100%;    
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.registration  img{
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.registration input[type="text"]{
+    padding: 0 10px;
+}
+.registration label
+{
+    padding: 0 5px 0 0;
+}
+#username{
+    width: 100%;     
+}
+.pass{
+    width: 50%;
+    margin: 0 10px 0 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#email{
+    width: 100%;     
+}
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.details {
+    display: flex;
+    height: 55%;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 6px 0 0 20px;
+}
+
+.details h2{
+    width: 100%;
+    
+}
+.details input{
+    width: 40%;
+    margin: 24px 10px 15px 0;
+}
+
+
+.registration div,
+.details div {
+    display: flex; 
+   
+   
+}
+
+.details div input,
+.details div select {
+    flex: 1; 
+    margin-right: 15px; 
+}
+.details  select{
+    height: 30px;
+    align-self: center;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+
+.but{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    border-top: 1px solid black;
+    align-items: end;
+}
+.but div{
+    height: 20%;
+}
+.but button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 20%;
+    height: 35px;
+    text-align: center;
+    background-color: darkcyan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.real_check
+{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.custom_check{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(225, 222, 222);
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-right: 5px;
+    vertical-align: sub ;
+    position: relative;
+}
+.custom_check::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../image/checkmark.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: ease-in 2ms;
+}
+
+.real_check:checked + .custom_check::before{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.form_group{
+    padding: 5px;
+}
+.check{
+    margin: 10px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 899px){
+    form{
+        width: 500px;
+        height: 650px;
+    }
+    .info{
+        display: flex;
+       flex-direction:column ;
+       width: 100%;
+       height: 55%;
+       justify-content: center;
+       margin: 20px 0 60px 0 ;
+    }
+    .registration{
+        height: 55%;
+        width: 95%;
+        padding: 5px 0 0 20px;
+        margin-top: 30px;
+        }
+        .registration h2{
+            margin-bottom: 30px;
+        }
+        .details {
+            display: flex;
+            height: 55%;
+            flex-direction: column;
+            width: 95%;
+            box-sizing: border-box;
+            padding: 6px 0 0 20px;
+            margin-top: 30px;
+        }
+        .details h2{
+            margin-bottom: 30px;
+        }
+     h2{
+            width: 100%;
+            font-size: medium;
+        }
+        .custom_check{
+            width: 10px;
+            height: 10px;
+        }
+        .custom_check::before{
+            width: 8px;
+            height: 8px;
+        }
+        .form_group{
+            font-size: small;
+            
+        }
+        .check{
+            height: 12%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+        }
+        .but div{
+            height: 5%;
+        }
+        .but button{
+            top: 40px;
+            right: 50px;
+            width: 35%;
+            height: 35px;
+        }
+}
+@media screen and (max-width: 599px){
+    form{
+        width: 400px;
+        height: 800px;
+    }
+        .registration h2{
+            margin-bottom: 30px;
+        }
+        .registration .pas {
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            padding: 0px ; 
+            margin-left: 0;
+        }
+        .pass div {
+            width: 100%; 
+            margin-right: 0;
+            box-sizing: border-box;
+        }
+        #password{
+            width: 100%;
+        }
+        #confirm{
+            width: 100%;
+            margin:10px 0 0 30px ;
+        }
+        .details {
+            display: flex;
+            height: 55%;
+            flex-direction: column;
+            width: 95%;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        .details h2{
+            margin-bottom: 30px;
+        }
+     h2{
+            width: 100%;
+            font-size: 25px;
+        }
+       
+        .but div{
+            height: 30%;
+        }
+        .but button{
+            top: 40px;
+            right: 50px;
+            width: 35%;
+            height: 35px;
+        }
+        .details input{
+            width: 100%;
+            margin: 24px 10px 15px 0;
+        }
+        
+        .details div {
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .details div input,
+        .details div select {
+            flex: 1; 
+            margin-right: 15px; 
+        }
+        .details  select{
+            width: 100%;
+            height: 50px;
+            align-self: center;
+            background: none;
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 15px;
+            padding: 0 10px;
+            margin: 10px;
+        }
+        .check{
+            height: 20%;
+            padding-top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+           
+        }
+}

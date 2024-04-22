@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header"><h1>CREDIT CARD DETEILS</h1></div>
+    <div class="main">
+        <form   action="">
+            <label for="card" id="lbl_card">Card Number</label>
+            <input type="text" name="card" id="card" pattern="[0-9]" placeholder="1234 5678 9012 3456" maxlength="16">
+
+            <label for="Name" id="lbl_name">Name on Card</label>
+            <input type="text" name="Name" id="Name" pattern="[A-za-z]" placeholder="Name Surename" maxlength="16">
+
+                <label for="Date" id="lbl_date">Expiy Date</label>
+            <input type="text" name="Date" id="Date" class="Date" pattern="[0-9]" placeholder="02" maxlength="2">
+            <input type="text" name="Date" class="Date" id="Date2"  pattern="[0-9]" placeholder="2017" maxlength="4">
+
+            <label for="CVV" id="lbl_CVV">CVV/CNV</label>
+            <input type="password" name="CVV" id="CVV"  pattern="[0-9]" placeholder="***" maxlength="3">
+            <div class="planet"><img src="./image/moon_flag.png" alt="planet"></div>
+        </form>
+    </div>
+</body>
+</html>
