@@ -1,0 +1,32 @@
+.carousel-controls {
+    position: relative ; 
+}
+
+.carousel-controls .carousel-control-prev,
+.carousel-controls .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+}
+
+.carousel-controls .carousel-control-prev {
+    left: -40px; /* відстань від лівого краю */
+}
+
+.carousel-controls .carousel-control-next {
+    right: -40px; /* відстань від правого краю */
+}
+.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(100%); /* обернення кольорів іконок */
+        }
+
+body{
+ background-image: url(../image/bg.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+            background-position: center;
+        background-attachment: fixed;
+}
