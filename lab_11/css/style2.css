@@ -1,0 +1,41 @@
+
+.btn-info{
+    background-color: blueviolet;
+    color:azure;
+    transition: ease-out;
+    border: 1px solid rgb(95, 28, 157) ;
+    box-shadow: 3px 3px 5px rgb(138, 137, 137);
+}
+.btn-info:hover{
+    background-color: rgb(95, 28, 157);
+    color:azure;
+    transform: scale(1.1);
+    border: 1px solid rgb(64, 19, 106) ;
+    box-shadow: 3px 3px 10px rgb(62, 61, 61);
+}
+#myButton.btn-info:active {
+    background-color: rgb(64, 19, 106);
+    color: azure;
+    border: 1px solid rgb(95, 28, 157);
+    transform: scale(0.9);
+    box-shadow: none; 
+    transition: ease-out;
+}
+.btn-primary{
+    background-color: rgb(47, 222, 79);
+    color:rgb(28, 28, 28);
+    transition: ease-out;
+    border: 1px solid rgb(47, 222, 79);
+}
+.btn-primary:hover{
+    background-color: rgb(20, 131, 46);
+    color:azure;
+    border: 1px solid rgb(20, 131, 46) ;
+}
+#myButton1.btn-primary:active {
+    background-color: rgb(47, 222, 79);
+    color: azure;
+    border: 1px solid rgb(47, 222, 79);
+    transform: scale(0.9);
+    transition: ease-out;
+}
