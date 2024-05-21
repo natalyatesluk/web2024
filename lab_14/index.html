@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; width: 300px;">
+        <label for="name_pr">Name product</label>
+        <input type="text" name="name_products" id="name_pr">
+        <label for="count_pr">Count</label>
+        <input type="text" name="count" id="count_pr">
+        <label for="">Would it be sold?</label>
+        <div class="radio">
+            <label for="tr_bought_yes">Yes</label>
+            <input type="radio" name="sold" id="tr_bought_yes" value="yes">
+            <label for="tr_bought_no">No</label>
+            <input type="radio" name="sold" id="tr_bought_no" value="no">
+        </div>
+        <input type="button" onclick="addObj()" value="Add">
+        <label for="product_select">Choose a product to mark as purchased:</label>
+        <select id="product_select">
+            <!-- Options will be populated dynamically -->
+        </select>
+        <input type="button" onclick="markAsPurchased()" value="Mark as Purchased">
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

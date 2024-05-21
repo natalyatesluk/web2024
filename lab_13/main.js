@@ -16,7 +16,7 @@ console.log(typeof res4); // "number"
 let result=prompt ("Enter enen and possitive number:");
 
 while (isNaN(parseFloat(result))) {
-    result= prompt("You have not entered a number.<br>Try again: ");
+    result= prompt("You have not entered a number.\n Try again: ");
 } 
 
 if((result%2)==0 && result>0)
@@ -86,6 +86,7 @@ if (!isNaN(a) && !isNaN(b) && !isNaN(c) && a > 0 && b > 0 && c > 0) {
 }
 let date= new Date();
 let hour= date.getHours();
+console.log(hour);
 if(hour <=23 && hour<5)
 {
     console.log("Good night!");

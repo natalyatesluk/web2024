@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .error {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <div id="errorMessage" class="error">Please fill in all fields.</div>
+
+    <script>
+        // Function to validate the form and store values in variables
+        function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            let gender = document.querySelector('input[name="gender"]:checked')?.value;
+            const errorMessage = document.getElementById("errorMessage");
+
+            // Check if the name is not empty
+            if (name === "") {
+                errorMessage.style.display = "block";
+                errorMessage.textContent = "Please enter your name.";
+                return;
+            }
+
+            // Check if a gender is selected
+            if (!gender) {
+                errorMessage.style.display = "block";
+                errorMessage.textContent = "Please select your gender.";
+                return;
+            }
+
+            // If both fields are filled, display the values
+            errorMessage.style.display = "none";
+            console.log("Name:", name);
+            console.log("Gender:", gender);
+        }
+    </script>
+</body>
+</html>
